@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="Course">
+        <xsd:complexType>
+            <xsd:all>
+                <xsd:element name="Name" type="xsd:string"></xsd:element>
+                <xsd:element name="Description" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="Category" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="Level" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:enumeration value="Basic"></xsd:enumeration>
+                            <xsd:enumeration value="Fundamentals"></xsd:enumeration>
+                            <xsd:enumeration value="Advanced"></xsd:enumeration>
+                            <xsd:enumeration value="Master"></xsd:enumeration>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Instance" type="InstanceType"></xsd:element>
+                <xsd:element name="Units" type="UnitListType"></xsd:element>
+                <xsd:element name="Students" type="StudentListType"></xsd:element>
+                <xsd:element name="Trainers" type="TrainerListType"></xsd:element>
+            </xsd:all>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="InstanceType">
+        <xsd:sequence>
+            <xsd:element name="StartDateTime" type="xsd:dateTime"></xsd:element>
+            <xsd:element name="EndDateTime" type="xsd:dateTime"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="UnitListType">
+        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+
+            <xsd:element name="Unit">
+                <xsd:complexType>
+                    <xsd:all>
+                        <xsd:element name="Name" type="xsd:string"></xsd:element>
+                        <xsd:element name="Description" type="xsd:string" minOccurs="0"></xsd:element>
+                        <xsd:element name="Instance" type="InstanceType"></xsd:element>
+                        <xsd:element name="Resources" type="ResourceListType"></xsd:element>
+                    </xsd:all>
+                    <xsd:attribute name="order" type="xsd:integer" default="0"></xsd:attribute>
+                </xsd:complexType>
+            </xsd:element>
+
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="ResourceListType">
+        <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+
+            <xsd:element name="Resource">
+                <xsd:complexType>
+                    <xsd:all>
+                        <xsd:element name="Name" type="xsd:string"></xsd:element>
+                        <xsd:element name="URL" type="xsd:anyURI"></xsd:element>
+                        <xsd:element name="IconURL" type="xsd:anyURI" minOccurs="0"></xsd:element>
+                    </xsd:all>
+                    <xsd:attribute name="order" type="xsd:integer" default="0"></xsd:attribute>
+                    <xsd:attribute name="visible" type="xsd:boolean" default="true"></xsd:attribute>
+                    <xsd:attribute name="type" type="ResourceTypeAttr" use="required"></xsd:attribute>
+                </xsd:complexType>
+            </xsd:element>
+
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="ResourceTypeAttr">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="video"></xsd:enumeration>
+            <xsd:enumeration value="archive"></xsd:enumeration>
+            <xsd:enumeration value="doc"></xsd:enumeration>
+            <xsd:enumeration value="external"></xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="StudentListType">
+        <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+
+            <xsd:element name="Student">
+                <xsd:complexType>
+                    <xsd:all>
+                        <xsd:element name="FirstName" type="xsd:string"></xsd:element>
+                        <xsd:element name="LastName" type="xsd:string"></xsd:element>
+                        <xsd:element name="Email" type="xsd:string"></xsd:element>
+                        <xsd:element name="Score" type="xsd:integer" minOccurs="0"></xsd:element>
+                    </xsd:all>
+                </xsd:complexType>
+            </xsd:element>
+
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="TrainerListType">
+        <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+
+            <xsd:element name="Trainer">
+                <xsd:complexType>
+                    <xsd:all>
+                        <xsd:element name="FirstName" type="xsd:string"></xsd:element>
+                        <xsd:element name="LastName" type="xsd:string"></xsd:element>
+                        <xsd:element name="Description" type="xsd:string" minOccurs="0"></xsd:element>
+                        <xsd:element name="PhotoURL" type="xsd:anyURI" minOccurs="0"></xsd:element>
+                    </xsd:all>
+                    <xsd:attribute name="public" type="xsd:boolean" default="true"></xsd:attribute>
+                </xsd:complexType>
+            </xsd:element>
+
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>

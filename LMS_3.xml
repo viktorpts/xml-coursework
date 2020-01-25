@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="LMS.xsd">
+    <Name>Microsoft Excel Automation</Name>
+    <Description><![CDATA[<p>В курса по Microsoft Excel Automation ще се запознаете с технологията Visual Basic for Application (VBA) и различни похвати за надграждане способностите на Microsoft Excel. В курса ще бъдат показани детайлни примери и разрешения, с които ще можете да извършвате допълнителни функции и действия. С Microsoft Excel Automation ще можете да разгърнете своите способности, използвайки VBA, за да създавате специфични решения и инструменти за вашата организация или бизнес.</p><p>В началото на курса, самите студенти ще изберете какво приложение да бъде разработено по време на практическите занятия. Обучението е изключително практически насочено и ще ви научи как да продължите да търсите информация и след приключването му, за да развивате своите приложения.</p>]]></Description>
+    <Category>Software Skills</Category>
+    <Level>Advanced</Level>
+    <Instance>
+        <StartDateTime>2020-01-23T00:00:00</StartDateTime>
+        <EndDateTime>2020-03-28T23:59:59</EndDateTime>
+    </Instance>
+    <Units>
+        <Unit order="10">
+            <Name>Introduction to VBA</Name>
+            <Instance>
+                <StartDateTime>2020-01-23T19:00:00</StartDateTime>
+                <EndDateTime>2020-01-23T22:00:00</EndDateTime>
+            </Instance>
+            <Resources/>
+        </Unit>
+        <Unit order="20">
+            <Name>Simple Functions and Calculations</Name>
+            <Instance>
+                <StartDateTime>2020-01-30T19:00:00</StartDateTime>
+                <EndDateTime>2020-01-30T22:00:00</EndDateTime>
+            </Instance>
+            <Resources/>
+        </Unit>
+        <Unit order="30">
+            <Name>Conditional Logic</Name>
+            <Instance>
+                <StartDateTime>2020-02-06T19:00:00</StartDateTime>
+                <EndDateTime>2020-02-06T22:00:00</EndDateTime>
+            </Instance>
+            <Resources/>
+        </Unit>
+        <Unit order="40">
+            <Name>Loops</Name>
+            <Instance>
+                <StartDateTime>2020-02-13T19:00:00</StartDateTime>
+                <EndDateTime>2020-02-13T22:00:00</EndDateTime>
+            </Instance>
+            <Resources/>
+        </Unit>
+        <Unit order="50">
+            <Name>Workbook Elements</Name>
+            <Instance>
+                <StartDateTime>2020-02-20T19:00:00</StartDateTime>
+                <EndDateTime>2020-02-20T22:00:00</EndDateTime>
+            </Instance>
+            <Resources/>
+        </Unit>
+        <Unit order="60">
+            <Name>Events and Triggers</Name>
+            <Instance>
+                <StartDateTime>2020-02-27T19:00:00</StartDateTime>
+                <EndDateTime>2020-02-27T22:00:00</EndDateTime>
+            </Instance>
+            <Resources/>
+        </Unit>
+        <Unit order="70">
+            <Name>Application Controls</Name>
+            <Instance>
+                <StartDateTime>2020-03-05T19:00:00</StartDateTime>
+                <EndDateTime>2020-03-05T22:00:00</EndDateTime>
+            </Instance>
+            <Resources/>
+        </Unit>
+        <Unit order="80">
+            <Name>Workshop: Exam Preparation</Name>
+            <Instance>
+                <StartDateTime>2020-03-12T19:00:00</StartDateTime>
+                <EndDateTime>2020-03-12T22:00:00</EndDateTime>
+            </Instance>
+            <Resources/>
+        </Unit>
+    </Units>
+    <Trainers>
+        <Trainer>
+            <FirstName>Ален</FirstName>
+            <LastName>Паунов</LastName>
+            <Description><![CDATA[<p><strong>Ален</strong> е Директор Обучения на Software University. Въпреки че години работи в сферата на правните услуги, открива програмирането като своя страст, автоматизирайките редица процеси, с които работи. Един от най-мотивиращите преподаватели в Софтуерния Университет, Ален успява да предаде своите знания и страст към програмирането на всичките си студенти.</p>]]></Description>
+            <PhotoURL>/assets/img/1076/nu3VLuAzdrbPAyP9.png</PhotoURL>
+        </Trainer>
+        <Trainer public="false">
+            <FirstName>Десислава</FirstName>
+            <LastName>Георгиева</LastName>
+        </Trainer>
+    </Trainers>
+    <Students>
+        <Student>
+            <FirstName>Милена</FirstName>
+            <LastName>Венедикова</LastName>
+            <Email>m.venedikova@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Ангел</FirstName>
+            <LastName>Стоянов</LastName>
+            <Email>a.stoyanov@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Гергана</FirstName>
+            <LastName>Спасова</LastName>
+            <Email>g.spasova@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Елена</FirstName>
+            <LastName>Грънчарова</LastName>
+            <Email>e.gryncharova@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Пенка</FirstName>
+            <LastName>Хаджиева</LastName>
+            <Email>p.hadzhieva@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Никола</FirstName>
+            <LastName>Йорданов</LastName>
+            <Email>n.jordanova@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Мария</FirstName>
+            <LastName>Николова</LastName>
+            <Email>m.nikolova@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Даниела</FirstName>
+            <LastName>Живкова</LastName>
+            <Email>d.zhivkova@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Росица</FirstName>
+            <LastName>Асенова</LastName>
+            <Email>r.asenova@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Йорданка</FirstName>
+            <LastName>Пешева</LastName>
+            <Email>j.pesheva@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Александър</FirstName>
+            <LastName>Симеонов</LastName>
+            <Email>a.simeonov@yourmail.com</Email>
+        </Student>
+    </Students>
+</Course>

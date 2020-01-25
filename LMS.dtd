@@ -1,0 +1,18 @@
+<!ELEMENT Course (Name, Description?, Category?, Level?, Instance, Units, Students)>
+    <!ELEMENT Name (#PCDATA)>
+    <!ELEMENT Description (#PCDATA)>
+    <!ELEMENT Category (#PCDATA)>
+    <!ELEMENT Level (#PCDATA)>
+    <!ELEMENT Instance (StartDate, StartTime, EndDate, EndTime, Duration)>
+        <!ELEMENT StartDate (#PCDATA)>
+        <!ELEMENT StartTime (#PCDATA)>
+        <!ELEMENT EndDate (#PCDATA)>
+        <!ELEMENT EndTime (#PCDATA)>
+        <!ELEMENT Duration (#PCDATA)>
+    <!ELEMENT Units (Unit+)>
+        <!ELEMENT Unit (Name, Instance, Resources)>
+            <!ELEMENT Resources (Resource*)>
+            <!ELEMENT Resource (Name, IconURL?, URL)>
+                <!ELEMENT IconURL (#PCDATA)>
+                <!ELEMENT URL (#PCDATA)>
+    <!ELEMENT Students (Student+)>

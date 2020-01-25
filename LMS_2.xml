@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="LMS.xsd">
+    <Name>Microsoft Excel Advanced</Name>
+    <Description><![CDATA[<p>Ефективното използване на MS Excel се счита за едно от най-полезните и незаменими умения, които можете да предложите в помощ на своя екип. Със своята популярност, Excel се е превърнал в жизненоважен елемент за функционирането на повечето съвременни работни среди, без значение от бранша.</p><p>Курсът ще ви запознае с разширената функционалност на софтуера, за разрешаване на специфични задачи от практиката и визуализиране на данните в подходящ вид. Демонстрирани ще бъдат начини за работа и рефериране на множество работни страници, оформяне на диаграми и най-вече овладяване на един от най-силните инструменти в Excel &ndash; пивот-таблицата.</p>]]></Description>
+    <Category>Software Skills</Category>
+    <Level>Advanced</Level>
+    <Instance>
+        <StartDateTime>2019-12-02T00:00:00</StartDateTime>
+        <EndDateTime>2020-01-11T23:59:59</EndDateTime>
+    </Instance>
+    <Units>
+        <Unit order="10">
+            <Name>Разширена работа с документи и оформление</Name>
+            <Instance>
+                <StartDateTime>2019-12-02T18:30:00</StartDateTime>
+                <EndDateTime>2019-12-02T21:30:00</EndDateTime>
+            </Instance>
+            <Resources>
+                <Resource type="doc" order="10">
+                    <Name>Презентация</Name>
+                    <URL>/resources/2613/afQukRtWQYt8E4sq.pptx</URL>
+                </Resource>
+                <Resource type="video" order="0">
+                    <Name>Видео</Name>
+                    <URL>/resources/2613/4BJSqUaKscur39fv.mkv</URL>
+                </Resource>
+                <Resource type="doc" visible="false">
+                    <Name>Авторски решения на задачите</Name>
+                    <URL>/resources/2613/uQRpbMJ4z8N5aQDE.xlsx</URL>
+                </Resource>
+            </Resources>
+            <Description><![CDATA[<p>Дата: 2 декември, от 19:00 - 21:30 часа, в зала <strong>Knowledge</strong>.</p><ul><li>Команди и клавишни комбинации за ускорена работа</li><li>Разширени функции за форматиране на данните</li><li>Сигурност и споделяне на файлове</li></ul>]]></Description>
+        </Unit>
+        <Unit order="20">
+            <Name>Формули за напреднали</Name>
+            <Instance>
+                <StartDateTime>2019-12-05T18:30:00</StartDateTime>
+                <EndDateTime>2019-12-05T21:30:00</EndDateTime>
+            </Instance>
+            <Resources>
+                <Resource type="doc" order="10">
+                    <Name>Презентация</Name>
+                    <URL>/resources/2613/qtDTs5VpXawp3CFg.pptx</URL>
+                </Resource>
+                <Resource type="video" order="0">
+                    <Name>Видео</Name>
+                    <URL>/resources/2613/YC7rT3gDJfFG5Bkc.mkv</URL>
+                </Resource>
+                <Resource type="doc" visible="false">
+                    <Name>Авторски решения на задачите</Name>
+                    <URL>/resources/2613/NSyC5p77PZAc4FF6.xlsx</URL>
+                </Resource>
+            </Resources>
+            <Description><![CDATA[<p>Дата: 5 декември, от 18:30 - 21:30 часа, в зала <strong>HQ Lab</strong>.</p><ul><li>Допълнителни инструменти за работа с формули</li><li>Функции за търсене на съвпадения в данни</li><li>Функции върху масиви от данни и достъпване на данни по непряка референция</li><li>Допълнителни функции за работа с дати</li></ul>]]></Description>
+        </Unit>
+        <Unit order="30">
+            <Name>Диаграми и обетки</Name>
+            <Instance>
+                <StartDateTime>2019-12-09T18:30:00</StartDateTime>
+                <EndDateTime>2019-12-09T21:30:00</EndDateTime>
+            </Instance>
+            <Resources>
+                <Resource type="doc" order="10">
+                    <Name>Презентация</Name>
+                    <URL>/resources/2613/wGXRtakTNT3zEwzK.pptx</URL>
+                </Resource>
+                <Resource type="video" order="0">
+                    <Name>Видео</Name>
+                    <URL>/resources/2613/BfvzArN5txRy5MTF.mkv</URL>
+                </Resource>
+                <Resource type="doc" visible="false">
+                    <Name>Авторски решения на задачите</Name>
+                    <URL>/resources/2613/BWPfP247ChjFHEnf.xlsx</URL>
+                </Resource>
+            </Resources>
+            <Description><![CDATA[<p>Дата: 9 декември, от 18:30 - 21:30 часа, в зала <strong>HQ Lab</strong>.</p><ul><li>Създаване и оформление на диаграми</li><li>Работа с различни видове диаграми</li><li>Изображения, обекти и стилизиран текст</li></ul>]]></Description>
+        </Unit>
+        <Unit order="40">
+            <Name>Обобщени (Pivot) таблици</Name>
+            <Instance>
+                <StartDateTime>2019-12-12T18:30:00</StartDateTime>
+                <EndDateTime>2019-12-12T21:30:00</EndDateTime>
+            </Instance>
+            <Resources>
+                <Resource type="doc" order="10">
+                    <Name>Презентация</Name>
+                    <URL>/resources/2613/XDvn8wKRhMeuGyts.pptx</URL>
+                </Resource>
+                <Resource type="video" order="0">
+                    <Name>Видео</Name>
+                    <URL>/resources/2613/2tFwCSAdBFYpJXZx.mkv</URL>
+                </Resource>
+                <Resource type="doc" visible="false">
+                    <Name>Авторски решения на задачите</Name>
+                    <URL>/resources/2613/CgMQDJNY6kz5F3rL.xlsx</URL>
+                </Resource>
+            </Resources>
+            <Description><![CDATA[<p>Дата: 12 декември, от 18:30 - 21:30 часа, в зала <strong>HQ Lab</strong>.</p><ul><li>Изисквания към данните</li><li>Създаване и редактиране на обобщени таблици</li><li>Сортиране, филтриране и изчислени полета</li><li>Графики към обобщени таблици</li></ul>]]></Description>
+        </Unit>
+        <Unit order="50">
+            <Name>Анализ на данни</Name>
+            <Instance>
+                <StartDateTime>2019-12-16T18:30:00</StartDateTime>
+                <EndDateTime>2019-12-16T21:30:00</EndDateTime>
+            </Instance>
+            <Resources>
+                <Resource type="doc" order="10">
+                    <Name>Презентация</Name>
+                    <URL>/resources/2613/fDr48u8j68bAVqPJ.pptx</URL>
+                </Resource>
+                <Resource type="video" order="0">
+                    <Name>Видео</Name>
+                    <URL>/resources/2613/jCC3kCuxTTcR2kY9.mkv</URL>
+                </Resource>
+                <Resource type="doc" visible="false">
+                    <Name>Авторски решения на задачите</Name>
+                    <URL>/resources/2613/zvdVK6WZ6mYeeMQX.xlsx</URL>
+                </Resource>
+            </Resources>
+            <Description><![CDATA[<p>Дата: 16 декември, от 18:30 - 21:30 часа, в зала <strong>HQ Lab</strong>.</p><ul><li>Статистически функции</li><li>Пакети за статистика и анализ на данни</li><li>Работа с инструменти за анализ на данни в Excel</li></ul>]]></Description>
+        </Unit>
+        <Unit order="60">
+            <Name>Въведение в макроси и автоматизация</Name>
+            <Instance>
+                <StartDateTime>2019-12-19T18:30:00</StartDateTime>
+                <EndDateTime>2019-12-19T21:30:00</EndDateTime>
+            </Instance>
+            <Resources>
+                <Resource type="doc" order="10">
+                    <Name>Презентация</Name>
+                    <URL>/resources/2613/FeqxgLVkxQAVa8ah.pptx</URL>
+                </Resource>
+                <Resource type="video" order="0">
+                    <Name>Видео</Name>
+                    <URL>/resources/2613/5937dhbChTNk524c.mkv</URL>
+                </Resource>
+                <Resource type="doc" visible="false">
+                    <Name>Авторски решения на задачите</Name>
+                    <URL>/resources/2613/DzdEsFS7HbJdcTws.xlsx</URL>
+                </Resource>
+            </Resources>
+            <Description><![CDATA[<p>Дата: 19 декември, от 18:30 - 21:30 часа, в зала <strong>HQ Lab</strong>.</p><ul><li>Принципи и възможни приложения на макросите</li><li>Създаване, редакция и изпълнение на макроси</li><li>Въведение в автоматизацията чрез VBA</li><li>Подготовка за изпит</li></ul>]]></Description>
+        </Unit>
+    </Units>
+    <Trainers>
+        <Trainer>
+            <FirstName>Виктор</FirstName>
+            <LastName>Костадинов</LastName>
+            <Description><![CDATA[<p><strong>Виктор</strong> е специалист с над 3 години опит като технически трейнър в сферата на софтуерната индустрия. Той е бивш директор на Образователния отдел и по настоящем ръководител на звеното за проучване и развитие в Софтуерния Университет, като и на двете позици голяма част от работното му ежедневие преминава в обработка и анализ на данни под различна форма в приложението <strong>MS Excel</strong>. Виктор е на мнение, че Excel е най-подходящия за целта инструмент в арсенала на съвременния професионалист, без значение дали става въпрос за финансов отчет, резултати от продажби, база данни от клиенти, или просто списък с покупки за парти.</p>]]></Description>
+            <PhotoURL>/assets/img/975/mJq8ukUtVTtScsDc.png</PhotoURL>
+        </Trainer>
+    </Trainers>
+    <Students>
+        <Student>
+            <FirstName>Виолета</FirstName>
+            <LastName>Кочева</LastName>
+            <Email>v.kocheva@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Милена</FirstName>
+            <LastName>Венедикова</LastName>
+            <Email>m.venedikova@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Ангел</FirstName>
+            <LastName>Стоянов</LastName>
+            <Email>a.stoyanov@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Иванка</FirstName>
+            <LastName>Дамянова</LastName>
+            <Email>i.damyanova@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Пенка</FirstName>
+            <LastName>Хаджиева</LastName>
+            <Email>p.hadzhieva@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Иван</FirstName>
+            <LastName>Чакъров</LastName>
+            <Email>i.chakurov@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Йордан</FirstName>
+            <LastName>Стамов</LastName>
+            <Email>j.stamov@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Румяна</FirstName>
+            <LastName>Петрова</LastName>
+            <Email>r.petrova@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Елена</FirstName>
+            <LastName>Асенова</LastName>
+            <Email>e.asenova@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Мария</FirstName>
+            <LastName>Николова</LastName>
+            <Email>m.nikolova@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Даниела</FirstName>
+            <LastName>Живкова</LastName>
+            <Email>d.zhivkova@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Тодор</FirstName>
+            <LastName>Танев</LastName>
+            <Email>t.tanev@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Надежда</FirstName>
+            <LastName>Чешмеджиева</LastName>
+            <Email>n.cheshmedzhieva@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Румяна</FirstName>
+            <LastName>Велешки</LastName>
+            <Email>r.veleshki@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Иванка</FirstName>
+            <LastName>Николова</LastName>
+            <Email>i.nikolova@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Александър</FirstName>
+            <LastName>Кочев</LastName>
+            <Email>a.kochev@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Николай</FirstName>
+            <LastName>Кантарджиев</LastName>
+            <Email>n.kantardzhiev@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Николай</FirstName>
+            <LastName>Агура</LastName>
+            <Email>n.agura@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Александър</FirstName>
+            <LastName>Мавродиев</LastName>
+            <Email>a.mavrodiev@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Александър</FirstName>
+            <LastName>Симеонов</LastName>
+            <Email>a.simeonov@yourmail.com</Email>
+        </Student>
+        <Student>
+            <FirstName>Силвия</FirstName>
+            <LastName>Вълчева</LastName>
+            <Email>s.vulcheva@yourmail.com</Email>
+        </Student>
+    </Students>
+</Course>

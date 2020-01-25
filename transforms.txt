@@ -1,0 +1,13 @@
+xml -> html
+1 course info - course meta + trainer
+2 unit list - units + visisble resources
+3 unit plan - dates and times
+4 list of links to videos with names of units
+
+xml -> xml
+1 marketing list - user emails
+2 unit plan - dates and times
+
+xml -> txt
+1 marketing list - user emails
+2 trainer schedule - occupied dates and times

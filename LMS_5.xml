@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="LMS.xsd">
+    <Name>Internal Meeting</Name>
+    <Instance>
+        <StartDateTime>2017-01-01T00:00:00</StartDateTime>
+        <EndDateTime>2017-01-01T23:59:59</EndDateTime>
+    </Instance>
+    <Units>
+        <Unit>
+            <Name>Meeting - Marketing</Name>
+            <Instance>
+                <StartDateTime>2017-04-10T10:00:00</StartDateTime>
+                <EndDateTime>2017-04-10T11:00:00</EndDateTime>
+            </Instance>
+            <Resources/>
+        </Unit>
+        <Unit>
+            <Name>Meeting - Finance</Name>
+            <Instance>
+                <StartDateTime>2017-04-10T13:00:00</StartDateTime>
+                <EndDateTime>2017-04-10T14:00:00</EndDateTime>
+            </Instance>
+            <Resources/>
+        </Unit>
+        <Unit>
+            <Name>Meeting - Marketing</Name>
+            <Instance>
+                <StartDateTime>2017-04-20T10:00:00</StartDateTime>
+                <EndDateTime>2017-04-20T11:00:00</EndDateTime>
+            </Instance>
+            <Resources/>
+        </Unit>
+        <Unit>
+            <Name>Meeting - Marketing</Name>
+            <Instance>
+                <StartDateTime>2017-04-22T15:30:00</StartDateTime>
+                <EndDateTime>2017-04-22T16:00:00</EndDateTime>
+            </Instance>
+            <Resources/>
+        </Unit>
+        <Unit>
+            <Name>Meeting - CRM</Name>
+            <Instance>
+                <StartDateTime>2017-04-23T18:00:00</StartDateTime>
+                <EndDateTime>2017-04-23T18:30:00</EndDateTime>
+            </Instance>
+            <Resources/>
+        </Unit>
+    </Units>
+    <Trainers/>
+    <Students/>
+</Course>

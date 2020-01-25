@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LMS - XML Coursework</title>
+    <script src="LMS.js"></script>
+</head>
+
+<body>
+    <button onclick="generate()">Generate XML</button>
+
+    <script>
+        function generate() {
+            const doc = parse(data1);
+
+            const xml = new XMLSerializer();
+            console.log(xml.serializeToString(doc));
+            download('output.xml', `<?xml version="1.0" encoding="utf-8"?>` + xml.serializeToString(doc));
+        }
+
+        const data1 = {
+            Name: 'Microsoft Excel Fundamentals',
+            Description: '<p>Ефективното използване на MS Excel се счита за едно от най-полезните и незаменими умения, които можете да предложите в помощ на своя екип. Със своята популярност, Excel се е превърнал в жизненоважен елемент за функционирането на повечето съвременни работни среди, без значение от бранша.</p><p>Курсът Microsoft Excel Fundamentals ще ви запознае с основите на софтуера и най-често използваните му възможности. Ще бъдат подробно разгледани елементите на интерфейса и работата с тях, въвеждането и обработката на данни, както и визуалното им форматиране. Значителен фокус ще се отдели на най-полезните и широко използвани вградени математически формули и функциите за работа с текстови данни.</p>',
+            Category: 'Software Skills',
+            Level: 1,
+            StartDateTime: '2019-10-10T00:00:00',
+            EndDateTime: '2019-12-01T23:59:59',
+            Units: [
+                {
+                    order: 10,
+                    Name: 'Въведение в Excel',
+                    Description: `<p>Дата: 10 октомври, от 18:30 - 21:30 часа</p><ul><li>Елементи на интерфейса и работа с менюто</li><li>Организация на данните в Excel</li><li>Въвеждане и редактиране на данни</li><li>Редакция на редове и колони</li><li>Работа с файлове</li></ul>`,
+                    StartDateTime: '2019-10-10T18:30:00',
+                    EndDateTime: '2019-12-01T21:30:00',
+                    Resources: [
+                        { type: 'doc', order: 10, Name: 'Презентация', URL: '/resources/2548/gwtaukgk4dp566d9.pptx' },
+                        { type: 'video', order: 0, Name: 'Видео', URL: '/resources/2548/cucqcdmn8bury729.mkv' },
+                        { type: 'doc', visible: false, Name: 'Авторски решения на задачите', URL: '/resources/2548/mg2wygxdxe5367j9.xlsx' }
+                    ]
+                },
+                {
+                    order: 20,
+                    Name: "Математически функции",
+                    Description: "<p>Дата: 17 октомври, от 18:30 - 21:30 часа, в зала <strong>Knowledge</strong>.</p><ul><li>Въвеждане и редактиране на функции</li><li>Пренасяне на функции в множество клетки</li><li>Референции към клетки</li><li>Често използвани математически функции</li></ul>",
+                    StartDateTime: "2019-10-17T18:30:00",
+                    EndDateTime: "2019-10-17T21:30:00",
+                    Resources: [
+                        { type: 'doc', order: 10, Name: 'Презентация', URL: '/resources/2548/J5BCLYwnRUrVKkSb.pptx' },
+                        { type: 'video', order: 0, Name: 'Видео', URL: '/resources/2548/rXy3xC7tXC5jhWR2.mkv' },
+                        { type: 'doc', visible: false, Name: 'Авторски решения на задачите', URL: '/resources/2548/D5sefAdhrkAQ238K.xlsx' }
+                    ]
+                },
+                {
+                    order: 30,
+                    Name: "Форматиране и изглед",
+                    Description: "<p>Дата: 24 октомври, от 18:30 - 21:30 часа, в зала <strong>Knowledge</strong>.</p><ul><li>Стилове, ефекти и рамки</li><li>Форматиране на различни видове данни</li><li>Форматиране на таблици</li><li>Принтиране</li></ul>",
+                    StartDateTime: "2019-10-24T18:30:00",
+                    EndDateTime: "2019-10-24T21:30:00",
+                    Resources: [
+                        { type: 'doc', order: 10, Name: 'Презентация', URL: '/resources/2548/eH67A3sdDrVxJQud.pptx' },
+                        { type: 'video', order: 0, Name: 'Видео', URL: '/resources/2548/ACq8aKdy6vTDs6DY.mkv' },
+                        { type: 'doc', visible: false, Name: 'Авторски решения на задачите', URL: '/resources/2548/GdPMXjhUFnj6jH7k.xlsx' }
+                    ]
+                },
+                {
+                    order: 40,
+                    Name: "Логически проверки",
+                    Description: "<p>Дата: 31 октомври, от 18:30 - 21:30 часа, в зала <strong>Knowledge</strong>.</p><ul><li>Условни конструкции</li><li>Условно фомратиране</li></ul>",
+                    StartDateTime: "2019-10-31T18:30:00",
+                    EndDateTime: "2019-10-31T21:30:00",
+                    Resources: [
+                        { type: 'doc', order: 10, Name: 'Презентация', URL: '/resources/2548/QypQAYRAfb4YRP5q.pptx' },
+                        { type: 'video', order: 0, Name: 'Видео', URL: '/resources/2548/4vTDbAcbUbMpKhNG.mkv' },
+                        { type: 'doc', visible: false, Name: 'Авторски решения на задачите', URL: '/resources/2548/Jv9LfaR9kJzhjLA5.xlsx' }
+                    ]
+                },
+                {
+                    order: 50,
+                    Name: "Операции с текст",
+                    Description: "<p>Дата: 7 ноември, от 18:30 - 21:30 часа, в зала <strong>Knowledge</strong>.</p><ul><li>Сортиране и филтриране</li><li>Функции за работа с текст</li><li>Форматиране на данни в текстов вид</li><li>Формули за търсене по динамичен параметър</li></ul>",
+                    StartDateTime: "2019-11-07T18:30:00",
+                    EndDateTime: "2019-11-07T21:30:00",
+                    Resources: [
+                        { type: 'doc', order: 10, Name: 'Презентация', URL: '/resources/2548/dpU4P5JEE3hqrSeF.pptx' },
+                        { type: 'video', order: 0, Name: 'Видео', URL: '/resources/2548/YJe8qgk6vu7NMkYS.mkv' },
+                        { type: 'doc', visible: false, Name: 'Авторски решения на задачите', URL: '/resources/2548/ynrSg8LP8w3y8drN.xlsx' }
+                    ]
+                },
+                {
+                    order: 60,
+                    Name: "Преработка на таблици",
+                    Description: "<p>Дата: 14 ноември, от 18:30 - 21:30 часа, в зала <strong>Knowledge</strong>.</p><ul><li>Редактиране и форматиране на съществуваща таблица</li><li>Разширена функционалност</li><li>Подготовка за изпит</li></ul>",
+                    StartDateTime: "2019-11-14T18:30:00",
+                    EndDateTime: "2019-11-14T21:30:00",
+                    Resources: [
+                        { type: 'doc', order: 10, Name: 'Презентация', URL: '/resources/2548/rfaw6FphG37mpPTg.pptx' },
+                        { type: 'video', order: 0, Name: 'Видео', URL: '/resources/2548/CEXae5w2ytHDrajj.mkv' },
+                        { type: 'doc', visible: false, Name: 'Авторски решения на задачите', URL: '/resources/2548/JCZKZfpsxM4FP7qV.xlsx' }
+                    ]
+                }
+            ],
+            Trainers: [
+                {
+                    FirstName: 'Виктор',
+                    LastName: 'Костадинов',
+                    Description: '<p><strong>Виктор</strong> е специалист с над 3 години опит като технически трейнър в сферата на софтуерната индустрия. Той е бивш директор на Образователния отдел и по настоящем ръководител на звеното за проучване и развитие в Софтуерния Университет, като и на двете позици голяма част от работното му ежедневие преминава в обработка и анализ на данни под различна форма в приложението <strong>MS Excel</strong>. Виктор е на мнение, че Excel е най-подходящия за целта инструмент в арсенала на съвременния професионалист, без значение дали става въпрос за финансов отчет, резултати от продажби, база данни от клиенти, или просто списък с покупки за парти.</p>',
+                    PhotoURL: '/assets/img/975/mJq8ukUtVTtScsDc.png'
+                },
+                {
+                    public: false,
+                    FirstName: 'Десислава',
+                    LastName: 'Георгиева'
+                }
+            ],
+            Students: [
+                { FirstName: 'Виолета', LastName: 'Кочева', Email: 'v.kocheva@yourmail.com' },
+                { FirstName: 'Милена', LastName: 'Венедикова', Email: 'm.venedikova@yourmail.com' },
+                { FirstName: 'Ангел', LastName: 'Стоянов', Email: 'a.stoyanov@yourmail.com' },
+                { FirstName: 'Гергана', LastName: 'Спасова', Email: 'g.spasova@yourmail.com' },
+                { FirstName: 'Елена', LastName: 'Грънчарова', Email: 'e.gryncharova@yourmail.com' },
+                { FirstName: 'Пенка', LastName: 'Хаджиева', Email: 'p.hadzhieva@yourmail.com' },
+                { FirstName: 'Иван', LastName: 'Чакъров', Email: 'i.chakurov@yourmail.com' },
+                { FirstName: 'Йордан', LastName: 'Стамов', Email: 'j.stamov@yourmail.com' },
+                { FirstName: 'Румяна', LastName: 'Петрова', Email: 'r.petrova@yourmail.com' },
+                { FirstName: 'Пламен', LastName: 'Николов', Email: 'p.nikolov@yourmail.com' },
+                { FirstName: 'Никола', LastName: 'Йорданов', Email: 'n.jordanova@yourmail.com' },
+                { FirstName: 'Мария', LastName: 'Николова', Email: 'm.nikolova@yourmail.com' },
+                { FirstName: 'Даниела', LastName: 'Живкова', Email: 'd.zhivkova@yourmail.com' },
+                { FirstName: 'Тодор', LastName: 'Танев', Email: 't.tanev@yourmail.com' },
+                { FirstName: 'Росица', LastName: 'Асенова', Email: 'r.asenova@yourmail.com' },
+                { FirstName: 'Йорданка', LastName: 'Пешева', Email: 'j.pesheva@yourmail.com' },
+                { FirstName: 'Румяна', LastName: 'Велешки', Email: 'r.veleshki@yourmail.com' },
+                { FirstName: 'Иванка', LastName: 'Николова', Email: 'i.nikolova@yourmail.com' },
+                { FirstName: 'Александър', LastName: 'Кочев', Email: 'a.kochev@yourmail.com' },
+                { FirstName: 'Тодор', LastName: 'Кьосев', Email: 't.kyosev@yourmail.com' },
+                { FirstName: 'Николай', LastName: 'Кантарджиев', Email: 'n.kantardzhiev@yourmail.com' },
+                { FirstName: 'Николай', LastName: 'Агура', Email: 'n.agura@yourmail.com' },
+                { FirstName: 'Александър', LastName: 'Мавродиев', Email: 'a.mavrodiev@yourmail.com' },
+                { FirstName: 'Александър', LastName: 'Симеонов', Email: 'a.simeonov@yourmail.com' },
+                { FirstName: 'Силвия', LastName: 'Вълчева', Email: 's.vulcheva@yourmail.com' }
+            ]
+        };
+
+        const data2 = {
+            Name: 'Microsoft Excel Advanced',
+            Description: '<p>Ефективното използване на MS Excel се счита за едно от най-полезните и незаменими умения, които можете да предложите в помощ на своя екип. Със своята популярност, Excel се е превърнал в жизненоважен елемент за функционирането на повечето съвременни работни среди, без значение от бранша.</p><p>Курсът ще ви запознае с разширената функционалност на софтуера, за разрешаване на специфични задачи от практиката и визуализиране на данните в подходящ вид. Демонстрирани ще бъдат начини за работа и рефериране на множество работни страници, оформяне на диаграми и най-вече овладяване на един от най-силните инструменти в Excel &ndash; пивот-таблицата.</p>',
+            Category: 'Software Skills',
+            Level: 2,
+            StartDateTime: '2019-12-02T00:00:00',
+            EndDateTime: '2020-01-11T23:59:59',
+            Units: [
+                {
+                    order: 10,
+                    Name: "Разширена работа с документи и оформление",
+                    Description: "<p>Дата: 2 декември, от 19:00 - 21:30 часа, в зала <strong>Knowledge</strong>.</p><ul> <li>Команди и клавишни комбинации за ускорена работа</li> <li>Разширени функции за форматиране на данните</li> <li>Сигурност и споделяне на файлове</li> </ul>",
+                    StartDateTime: "2019-12-02T18:30:00",
+                    EndDateTime: "2019-12-02T21:30:00",
+                    Resources: [
+                        { type: 'doc', order: 10, Name: 'Презентация', URL: '/resources/2613/afQukRtWQYt8E4sq.pptx' },
+                        { type: 'video', order: 0, Name: 'Видео', URL: '/resources/2613/4BJSqUaKscur39fv.mkv' },
+                        { type: 'doc', visible: false, Name: 'Авторски решения на задачите', URL: '/resources/2613/uQRpbMJ4z8N5aQDE.xlsx' }
+                    ]
+                },
+                {
+                    order: 20,
+                    Name: "Формули за напреднали",
+                    Description: "<p>Дата: 5 декември, от 18:30 - 21:30 часа, в зала <strong>HQ Lab</strong>.</p><ul><li>Допълнителни инструменти за работа с формули</li><li>Функции за търсене на съвпадения в данни</li><li>Функции върху масиви от данни и достъпване на данни по непряка референция</li><li>Допълнителни функции за работа с дати</li></ul>",
+                    StartDateTime: "2019-12-05T18:30:00",
+                    EndDateTime: "2019-12-05T21:30:00",
+                    Resources: [
+                        { type: 'doc', order: 10, Name: 'Презентация', URL: '/resources/2613/qtDTs5VpXawp3CFg.pptx' },
+                        { type: 'video', order: 0, Name: 'Видео', URL: '/resources/2613/YC7rT3gDJfFG5Bkc.mkv' },
+                        { type: 'doc', visible: false, Name: 'Авторски решения на задачите', URL: '/resources/2613/NSyC5p77PZAc4FF6.xlsx' }
+                    ]
+                },
+                {
+                    order: 30,
+                    Name: "Диаграми и обетки",
+                    Description: "<p>Дата: 9 декември, от 18:30 - 21:30 часа, в зала <strong>HQ Lab</strong>.</p><ul><li>Създаване и оформление на диаграми</li><li>Работа с различни видове диаграми</li><li>Изображения, обекти и стилизиран текст</li></ul>",
+                    StartDateTime: "2019-12-09T18:30:00",
+                    EndDateTime: "2019-12-09T21:30:00",
+                    Resources: [
+                        { type: 'doc', order: 10, Name: 'Презентация', URL: '/resources/2613/wGXRtakTNT3zEwzK.pptx' },
+                        { type: 'video', order: 0, Name: 'Видео', URL: '/resources/2613/BfvzArN5txRy5MTF.mkv' },
+                        { type: 'doc', visible: false, Name: 'Авторски решения на задачите', URL: '/resources/2613/BWPfP247ChjFHEnf.xlsx' }
+                    ]
+                },
+                {
+                    order: 40,
+                    Name: "Обобщени (Pivot) таблици",
+                    Description: "<p>Дата: 12 декември, от 18:30 - 21:30 часа, в зала <strong>HQ Lab</strong>.</p><ul><li>Изисквания към данните</li><li>Създаване и редактиране на обобщени таблици</li><li>Сортиране, филтриране и изчислени полета</li><li>Графики към обобщени таблици</li></ul>",
+                    StartDateTime: "2019-12-12T18:30:00",
+                    EndDateTime: "2019-12-12T21:30:00",
+                    Resources: [
+                        { type: 'doc', order: 10, Name: 'Презентация', URL: '/resources/2613/XDvn8wKRhMeuGyts.pptx' },
+                        { type: 'video', order: 0, Name: 'Видео', URL: '/resources/2613/2tFwCSAdBFYpJXZx.mkv' },
+                        { type: 'doc', visible: false, Name: 'Авторски решения на задачите', URL: '/resources/2613/CgMQDJNY6kz5F3rL.xlsx' }
+                    ]
+                },
+                {
+                    order: 50,
+                    Name: "Анализ на данни",
+                    Description: "<p>Дата: 16 декември, от 18:30 - 21:30 часа, в зала <strong>HQ Lab</strong>.</p><ul><li>Статистически функции</li><li>Пакети за статистика и анализ на данни</li><li>Работа с инструменти за анализ на данни в Excel</li></ul>",
+                    StartDateTime: "2019-12-16T18:30:00",
+                    EndDateTime: "2019-12-16T21:30:00",
+                    Resources: [
+                        { type: 'doc', order: 10, Name: 'Презентация', URL: '/resources/2613/fDr48u8j68bAVqPJ.pptx' },
+                        { type: 'video', order: 0, Name: 'Видео', URL: '/resources/2613/jCC3kCuxTTcR2kY9.mkv' },
+                        { type: 'doc', visible: false, Name: 'Авторски решения на задачите', URL: '/resources/2613/zvdVK6WZ6mYeeMQX.xlsx' }
+                    ]
+                },
+                {
+                    order: 60,
+                    Name: "Въведение в макроси и автоматизация",
+                    Description: "<p>Дата: 19 декември, от 18:30 - 21:30 часа, в зала <strong>HQ Lab</strong>.</p><ul><li>Принципи и възможни приложения на макросите</li><li>Създаване, редакция и изпълнение на макроси</li><li>Въведение в автоматизацията чрез VBA</li><li>Подготовка за изпит</li></ul>",
+                    StartDateTime: "2019-12-19T18:30:00",
+                    EndDateTime: "2019-12-19T21:30:00",
+                    Resources: [
+                        { type: 'doc', order: 10, Name: 'Презентация', URL: '/resources/2613/FeqxgLVkxQAVa8ah.pptx' },
+                        { type: 'video', order: 0, Name: 'Видео', URL: '/resources/2613/5937dhbChTNk524c.mkv' },
+                        { type: 'doc', visible: false, Name: 'Авторски решения на задачите', URL: '/resources/2613/DzdEsFS7HbJdcTws.xlsx' }
+                    ]
+                }
+
+            ],
+            Trainers: [
+                {
+                    FirstName: 'Виктор',
+                    LastName: 'Костадинов',
+                    Description: '<p><strong>Виктор</strong> е специалист с над 3 години опит като технически трейнър в сферата на софтуерната индустрия. Той е бивш директор на Образователния отдел и по настоящем ръководител на звеното за проучване и развитие в Софтуерния Университет, като и на двете позици голяма част от работното му ежедневие преминава в обработка и анализ на данни под различна форма в приложението <strong>MS Excel</strong>. Виктор е на мнение, че Excel е най-подходящия за целта инструмент в арсенала на съвременния професионалист, без значение дали става въпрос за финансов отчет, резултати от продажби, база данни от клиенти, или просто списък с покупки за парти.</p>',
+                    PhotoURL: '/assets/img/975/mJq8ukUtVTtScsDc.png'
+                }
+            ],
+            Students: [
+                { FirstName: 'Виолета', LastName: 'Кочева', Email: 'v.kocheva@yourmail.com' },
+                { FirstName: 'Милена', LastName: 'Венедикова', Email: 'm.venedikova@yourmail.com' },
+                { FirstName: 'Ангел', LastName: 'Стоянов', Email: 'a.stoyanov@yourmail.com' },
+                { FirstName: 'Иванка', LastName: 'Дамянова', Email: 'i.damyanova@yourmail.com' },
+                { FirstName: 'Пенка', LastName: 'Хаджиева', Email: 'p.hadzhieva@yourmail.com' },
+                { FirstName: 'Иван', LastName: 'Чакъров', Email: 'i.chakurov@yourmail.com' },
+                { FirstName: 'Йордан', LastName: 'Стамов', Email: 'j.stamov@yourmail.com' },
+                { FirstName: 'Румяна', LastName: 'Петрова', Email: 'r.petrova@yourmail.com' },
+                { FirstName: 'Елена', LastName: 'Асенова', Email: 'e.asenova@yourmail.com' },
+                { FirstName: 'Мария', LastName: 'Николова', Email: 'm.nikolova@yourmail.com' },
+                { FirstName: 'Даниела', LastName: 'Живкова', Email: 'd.zhivkova@yourmail.com' },
+                { FirstName: 'Тодор', LastName: 'Танев', Email: 't.tanev@yourmail.com' },
+                { FirstName: 'Надежда', LastName: 'Чешмеджиева', Email: 'n.cheshmedzhieva@yourmail.com' },
+                { FirstName: 'Румяна', LastName: 'Велешки', Email: 'r.veleshki@yourmail.com' },
+                { FirstName: 'Иванка', LastName: 'Николова', Email: 'i.nikolova@yourmail.com' },
+                { FirstName: 'Александър', LastName: 'Кочев', Email: 'a.kochev@yourmail.com' },
+                { FirstName: 'Николай', LastName: 'Кантарджиев', Email: 'n.kantardzhiev@yourmail.com' },
+                { FirstName: 'Николай', LastName: 'Агура', Email: 'n.agura@yourmail.com' },
+                { FirstName: 'Александър', LastName: 'Мавродиев', Email: 'a.mavrodiev@yourmail.com' },
+                { FirstName: 'Александър', LastName: 'Симеонов', Email: 'a.simeonov@yourmail.com' },
+                { FirstName: 'Силвия', LastName: 'Вълчева', Email: 's.vulcheva@yourmail.com' }
+            ]
+        };
+
+        const data3 = {
+            Name: 'Microsoft Excel Automation',
+            Description: '<p>В курса по Microsoft Excel Automation ще се запознаете с технологията Visual Basic for Application (VBA) и различни похвати за надграждане способностите на Microsoft Excel. В курса ще бъдат показани детайлни примери и разрешения, с които ще можете да извършвате допълнителни функции и действия. С Microsoft Excel Automation ще можете да разгърнете своите способности, използвайки VBA, за да създавате специфични решения и инструменти за вашата организация или бизнес.</p><p>В началото на курса, самите студенти ще изберете какво приложение да бъде разработено по време на практическите занятия. Обучението е изключително практически насочено и ще ви научи как да продължите да търсите информация и след приключването му, за да развивате своите приложения.</p>',
+            Category: 'Software Skills',
+            Level: 2,
+            StartDateTime: '2020-01-23T00:00:00',
+            EndDateTime: '2020-03-28T23:59:59',
+            Units: [
+                {
+                    order: 10,
+                    Name: "Introduction to VBA",
+                    StartDateTime: "2020-01-23T19:00:00",
+                    EndDateTime: "2020-01-23T22:00:00",
+                    Resources: []
+                },
+                {
+                    order: 20,
+                    Name: "Simple Functions and Calculations",
+                    StartDateTime: "2020-01-30T19:00:00",
+                    EndDateTime: "2020-01-30T22:00:00",
+                    Resources: []
+                },
+                {
+                    order: 30,
+                    Name: "Conditional Logic",
+                    StartDateTime: "2020-02-06T19:00:00",
+                    EndDateTime: "2020-02-06T22:00:00",
+                    Resources: []
+                },
+                {
+                    order: 40,
+                    Name: "Loops",
+                    StartDateTime: "2020-02-13T19:00:00",
+                    EndDateTime: "2020-02-13T22:00:00",
+                    Resources: []
+                },
+                {
+                    order: 50,
+                    Name: "Workbook Elements",
+                    StartDateTime: "2020-02-20T19:00:00",
+                    EndDateTime: "2020-02-20T22:00:00",
+                    Resources: []
+                },
+                {
+                    order: 60,
+                    Name: "Events and Triggers",
+                    StartDateTime: "2020-02-27T19:00:00",
+                    EndDateTime: "2020-02-27T22:00:00",
+                    Resources: []
+                },
+                {
+                    order: 70,
+                    Name: "Application Controls",
+                    StartDateTime: "2020-03-05T19:00:00",
+                    EndDateTime: "2020-03-05T22:00:00",
+                    Resources: []
+                },
+                {
+                    order: 80,
+                    Name: "Workshop: Exam Preparation",
+                    StartDateTime: "2020-03-12T19:00:00",
+                    EndDateTime: "2020-03-12T22:00:00",
+                    Resources: []
+                }
+            ],
+            Trainers: [
+                {
+                    FirstName: 'Ален',
+                    LastName: 'Паунов',
+                    Description: '<p><strong>Ален</strong> е Директор Обучения на Software University. Въпреки че години работи в сферата на правните услуги, открива програмирането като своя страст, автоматизирайките редица процеси, с които работи. Един от най-мотивиращите преподаватели в Софтуерния Университет, Ален успява да предаде своите знания и страст към програмирането на всичките си студенти.</p>',
+                    PhotoURL: '/assets/img/1076/nu3VLuAzdrbPAyP9.png'
+                },
+                {
+                    public: false,
+                    FirstName: 'Десислава',
+                    LastName: 'Георгиева'
+                }
+            ],
+            Students: [
+                { FirstName: 'Милена', LastName: 'Венедикова', Email: 'm.venedikova@yourmail.com' },
+                { FirstName: 'Ангел', LastName: 'Стоянов', Email: 'a.stoyanov@yourmail.com' },
+                { FirstName: 'Гергана', LastName: 'Спасова', Email: 'g.spasova@yourmail.com' },
+                { FirstName: 'Елена', LastName: 'Грънчарова', Email: 'e.gryncharova@yourmail.com' },
+                { FirstName: 'Пенка', LastName: 'Хаджиева', Email: 'p.hadzhieva@yourmail.com' },
+                { FirstName: 'Никола', LastName: 'Йорданов', Email: 'n.jordanova@yourmail.com' },
+                { FirstName: 'Мария', LastName: 'Николова', Email: 'm.nikolova@yourmail.com' },
+                { FirstName: 'Даниела', LastName: 'Живкова', Email: 'd.zhivkova@yourmail.com' },
+                { FirstName: 'Росица', LastName: 'Асенова', Email: 'r.asenova@yourmail.com' },
+                { FirstName: 'Йорданка', LastName: 'Пешева', Email: 'j.pesheva@yourmail.com' },
+                { FirstName: 'Александър', LastName: 'Симеонов', Email: 'a.simeonov@yourmail.com' },
+            ]
+        };
+
+        const data4 = {
+            Name: 'Stream Test',
+            StartDateTime: '2018-05-19T00:00:00',
+            EndDateTime: '2018-05-19T23:59:59',
+            Units: [
+                {
+                    Name: "Stream Test 1",
+                    StartDateTime: "2018-05-19T11:00:00",
+                    EndDateTime: "2018-05-19T13:00:00",
+                    Resources: []
+                }
+            ],
+            Trainers: [],
+            Students: []
+        };
+
+        const data5 = {
+            Name: 'Internal Meeting',
+            StartDateTime: '2017-01-01T00:00:00',
+            EndDateTime: '2017-01-01T23:59:59',
+            Units: [
+                {
+                    Name: "Meeting - Marketing",
+                    StartDateTime: "2017-04-10T10:00:00",
+                    EndDateTime: "2017-04-10T11:00:00",
+                    Resources: []
+                },
+                {
+                    Name: "Meeting - Finance",
+                    StartDateTime: "2017-04-10T13:00:00",
+                    EndDateTime: "2017-04-10T14:00:00",
+                    Resources: []
+                },
+                {
+                    Name: "Meeting - Marketing",
+                    StartDateTime: "2017-04-20T10:00:00",
+                    EndDateTime: "2017-04-20T11:00:00",
+                    Resources: []
+                },
+                {
+                    Name: "Meeting - Marketing",
+                    StartDateTime: "2017-04-22T15:30:00",
+                    EndDateTime: "2017-04-22T16:00:00",
+                    Resources: []
+                },
+                {
+                    Name: "Meeting - CRM",
+                    StartDateTime: "2017-04-23T18:00:00",
+                    EndDateTime: "2017-04-23T18:30:00",
+                    Resources: []
+                },
+            ],
+            Trainers: [],
+            Students: []
+        };
+    </script>
+</body>
+
+</html>
